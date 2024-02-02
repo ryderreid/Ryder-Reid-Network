@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Status Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffffff;
+        }
+
+        #status-container {
+            width: 300px; /* Set the desired width */
+        }
+
+        h1 {
+            color: #7289da;
+            text-align: center;
+        }
+
+        .component {
+            margin-bottom: 20px;
+            background-color: #f2f3f5;
+            border-radius: 10px;
+            padding: 15px;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        .status {
+            display: inline-block;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .status-operational {
+            background-color: #43b581;
+            color: white;
+        }
+
+        .status-degraded {
+            background-color: #fff049;
+            color: #2c3e50;
+        }
+        
+        .status-partial {
+            background-color: #faa61a;
+            color: #2c3e50;
+        }
+        .status-outage {
+            background-color: #f04747;
+            color: white;
+        }
+        .status-maintenance {
+            background-color: #47b5f0;
+            color: white;
+        }
+
+        /* Dropdown styles */
+        .dropdown {
+            margin-top: 10px;
+        }
+
+        .dropdown-select {
+            padding: 8px;
+            border-radius: 5px;
+        }
+
+        .dropdown-options {
+            display: none;
+            position: absolute;
+            background-color: #f2f3f5;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+
+        .dropdown-options a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #2c3e50;
+        }
+
+        .dropdown-options a:hover {
+            background-color: #ecf0f1;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="status-container">
+        <h1>Status Page</h1>
+
+        <div class="component">
+            <h2>Service 1</h2>
+            <div class="status status-operational">Operational</div>
+        </div>
+
+        <div class="component">
+            <h2>Service 2</h2>
+            <div class="status status-degraded">Degraded Performance</div>
+        </div>
+
+        <div class="component">
+            <h2>Service 3</h2>
+            <div class="status status-outage">Outage</div>
+        </div>
+    </div>
+</body>
+</html>
